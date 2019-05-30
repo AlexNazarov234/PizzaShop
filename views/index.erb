@@ -4,11 +4,34 @@
 
 	<% @products.each do |p| %>
 		<div class="col-md-3">
-			<%=	p.title %>
+			<div>
+				<%=	p.title %>
+			</div>
+
+			<div>
+				<img src="<%=	p.path_to_image %>">
+			</div>
+
+			<div>
+				<%=	p.description %>
+			</div>
+
+			<div>
+				Размер <%=	p.size %> см
+			</div>
+
+			<div>
+				Цена: <%=	p.price %> руб
+			</div>
+
 		</div>
 	<% end %>
 
 </div>
+
+<br>
+<br>
+<br>
 
 <button class="btn btn-primary btn-large" onclick="something1()">Click me!</button>
 
