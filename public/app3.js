@@ -1,4 +1,4 @@
-function something1 ()
+function something()
 {
 	var x = window.localStorage.getItem('bbb');
 
@@ -8,3 +8,13 @@ function something1 ()
 
 	alert(x);
 }	
+
+
+function add_to_card(id)
+{
+	alert('id pizza: '+ id);
+
+
+
+
+}

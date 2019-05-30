@@ -24,7 +24,7 @@
 				Цена: <%=	p.price %> руб
 			</div>
 
-			<button type="button" class="btn btn-sm btn-success">В корзину</button>
+			<button type="button" class="btn btn-sm btn-success" onclick="add_to_card(<%= p.id %>)">В корзину</button>
 
 		</div>
 	<% end %>
@@ -35,7 +35,7 @@
 <br>
 <br>
 
-<button class="btn btn-primary btn-large" onclick="something1()">Click me!</button>
+<button class="btn btn-primary btn-large" onclick="something()">Click me!</button>
 
 
 
