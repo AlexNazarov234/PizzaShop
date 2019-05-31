@@ -1,2 +1,36 @@
 <h4>Мои заказы</h4>
-<%= @orders.inspect %>
+ 
+<table class="table table-stripped">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Price</th>
+			<th>Qty</th>
+		</tr>		
+	</thead>
+	<tbody>
+
+		<% total_price = 0 %>
+		<% total_qty = 0 %>
+
+		<% @items.each do |item|  %>
+		<tr>
+			<td><%= item[0].title %></td>
+			<td><%= item[0].price %></td>
+			<td><%= item[1] %></td>
+
+			<% total_qty += item[1].to_i %>
+			<% total_price += item[0].price.to_f * item[1].to_i %>
+		</tr>	
+		<% end %>	
+		
+
+		<tr>
+			<th></th>
+			<th><%= total_price %></th>
+			<th><%= total_qty %></th>
+		</tr>	
+
+	</tbody>
+</table>
+

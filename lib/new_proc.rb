@@ -14,6 +14,4 @@ def parse_orders_line orders_input
 	end
 
 	return arr
-end
-
-
+end 	
