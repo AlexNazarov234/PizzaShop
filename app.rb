@@ -36,5 +36,7 @@ post '/cart' do
 end
 
 post '/place_order' do
-  erb "Save order"
+	@order = Order.create params[:order]
+
+  erb :order_placed
 end

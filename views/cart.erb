@@ -36,7 +36,7 @@
 
 <form action="/place_order" method="post">
 
-	<input type="hidden" name="order[order_input]" value= "<%= @orders_input %>">
+	<input type="hidden" name="order[orders_input]" value= "<%= @orders_input %>">
 
 	 <div class="form-group">
     <label>Name</label>
@@ -50,7 +50,7 @@
 
   <div class="form-group">
     <label>Delivery address</label>
-    <textarea name="order[Address]" class="form-control" placeholder="Delivery adress"></textarea>
+    <textarea name="order[address]" class="form-control" placeholder="Delivery adress"></textarea>
   </div>
 
   <button type="submit" class="btn btn-success btn-lg">Place this order!</button>
